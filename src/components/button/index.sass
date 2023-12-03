@@ -1,0 +1,27 @@
+@import "../../styles/vars/vars"
+
+.button
+    border: 0
+    padding: 1rem 2rem
+    font-size: 1rem
+    font-weight: bold
+    cursor: pointer
+    transition: 0.3s all ease-out
+    &.round
+        padding: .7rem 1.5rem
+        border-radius: 2rem
+    &.primary
+        background-color: $secondary-accent-color
+        box-shadow: 0px 3px 6px rgba($secondary-accent-color, 0.35)
+        color: $main-bg-color
+    &.secondary
+        background-color: $main-bg-color
+        box-shadow: 0px 3px 6px rgba($accent-color, 0.25)
+        color: $accent-color
+    &.alert
+        background-color: $main-bg-color
+        box-shadow: 0px 3px 6px rgba($alert-color, 0.25)
+        color: $alert-color
+    &:active
+        box-shadow: 0 0 0 rgba(0, 0, 0, 0)
+        transform: scale(0.97)

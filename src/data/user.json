@@ -1,0 +1,29 @@
+{
+    "name": "Gilbert",
+    "email": "4arians.abyte@gmail.com",
+    "booking": {
+        "type": "standard",
+        "price": 19.95,
+        "class": 5,
+        "locations": [
+            {
+                "address": "3880 Lougheed",
+                "city": "Burnaby"
+            },
+            {
+                "address": "4820 Kingsway",
+                "city": "Burnaby"
+            },
+            {
+                "address": "2750 Commercial Dr",
+                "city": "Vancouver"
+            }
+        ],
+        "purchaseDate": "2021-10-12T14:48:00.000Z"
+    },
+    "status": {
+        "stage": "waiting",
+        "position": 5,
+        "ETA": "2021-10-21T14:48:00.000Z"
+    }
+}

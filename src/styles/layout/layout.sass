@@ -1,0 +1,95 @@
+.columns
+    margin: 0 60px
+    width: calc(100vw - 120px)
+    @media #{$medium-down}
+        margin: 0 30px
+        width: calc(100vw - 60px)
+    @media #{$medium-down}
+        margin: 0 15px
+        width: calc(100vw - 30px)
+
+.container
+    width: 75%
+    margin: 0 auto
+    @media #{$medium-down}
+        width: 90%
+    @media #{$small-only}
+        width: 100%
+
+[class^="checkpoint"]
+    display: block
+    width: $checkpoint-width
+    margin: 5em 0
+
+    h1
+        span
+            font-size: .6em
+            letter-spacing: 2px
+
+.checkpoint-right
+    margin-left: $small-displacement
+
+.heading-width
+    width: 50%
+    @media #{$small-only}
+        width: 75%
+
+.flex
+    display: flex
+    &.row
+        flex-direction: row
+    &.row-reverse
+        flex-direction: row-reverse
+    &.column
+        flex-direction: column
+    &.between
+        justify-content: space-between
+    &.around
+        justify-content: space-around
+    &.center
+        justify-content: center
+    &.align-center
+        align-items: center
+    &.wrap
+        flex-wrap: wrap
+    &.wrap-reverse
+        flex-wrap: wrap-reverse
+    @media #{$medium-down}
+        &.med-row
+            flex-direction: row
+        &.med-row-reverse
+            flex-direction: row-reverse
+        &.med-column
+            flex-direction: column
+        &.med-between
+            justify-content: space-between
+        &.med-around
+            justify-content: space-around
+        &.med-center
+            justify-content: center
+        &.med-align-center
+            align-items: center
+        &.med-wrap
+            flex-wrap: wrap
+        &.med-wrap-reverse
+            flex-wrap: wrap-reverse
+    @media #{$small-only}
+        &.small-row
+            flex-direction: row
+        &.small-row-reverse
+            flex-direction: row-reverse
+        &.small-column
+            flex-direction: column
+        &.small-between
+            justify-content: space-between
+        &.small-around
+            justify-content: space-around
+        &.small-center
+            justify-content: center
+        &.small-align-center
+            align-items: center
+        &.small-wrap
+            flex-wrap: wrap
+        &.small-wrap-reverse
+            flex-wrap: wrap-reverse
+

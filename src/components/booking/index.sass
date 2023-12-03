@@ -1,0 +1,52 @@
+@import "../../styles/global"
+
+
+#book
+    .book-paper
+        background-color: $main-bg-color
+        padding: 64px 128px
+        margin-top: -100px
+        border-radius: 20px
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15)
+        @media #{$medium-down}
+            padding: 64px
+        @media #{$small-only}
+            padding: 32px 16px
+        h2
+            margin-top: 20px
+            width: 75%
+        .book-options-container
+            margin-top: 48px
+            .option
+                position: relative
+                width: 47%
+                padding: 24px
+                padding-bottom: 72px
+                background: $main-bg-color
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15)
+                border-radius: 10px
+                cursor: pointer
+                &.active
+                    border: 2px solid $accent-color
+                h4
+                    margin-top: 0
+                    font-size: 2rem
+                    font-weight: 300
+                    color: $accent-color
+                .price
+                    position: absolute
+                    right: 24px
+                    bottom: 24px
+                    font-size: 2rem
+                    color: $accent-color
+                    font-weight: 700
+                @media #{$medium-down}
+                    width: 100%
+                    margin-bottom: 16px
+        .book-footer
+            p
+                margin: 0
+                margin-top: 24px
+            .booking-button
+                margin-top: 24px
+                margin-left: auto

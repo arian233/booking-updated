@@ -1,0 +1,65 @@
+@import "./vars/vars.sass"
+
+body,
+html 
+    margin: 0
+    padding: 0
+    color: white
+    font-family: $roboto-font
+    background: $main-bg-color
+    color: $text-color
+    @media #{$medium-down}
+        font-size: 85%
+
+body
+    position: relative
+    height: auto
+    min-height: 100vh
+    overflow-y: auto
+    overflow-x: hidden
+    z-index: 0
+    
+*
+    outline: none !important
+    box-sizing: border-box
+
+a
+    color: $accent-color
+    text-decoration: none
+    &.mail-link
+        text-decoration: underline
+        letter-spacing: 0.5px
+
+h1, h2, h3
+    font-weight: 700
+    margin-bottom: 0
+
+h2
+    font-size: 2rem
+
+h3
+    color: $accent-color
+    font-size: 1rem
+    margin: 0
+
+p
+    font-weight: 300
+    font-size: 18px
+    margin-top: 0.2em
+    margin-bottom: .5em
+    color: $text-color
+
+button
+    cursor: pointer
+
+// IMPORT LAYOUT
+@import "layout/layout.sass"
+
+// IMPORT ANIMATION
+@import "animation/animation.sass"
+
+// IMPORT MISC
+@import "components/misc/misc.sass"
+
+// IMPORT RESPONSIVE FILES
+@import "responsive/responsive.sass"

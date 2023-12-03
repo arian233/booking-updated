@@ -1,0 +1,33 @@
+@import "../../styles/vars/vars"
+
+nav 
+    padding-top: 1rem
+    .nav-container
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        .nav-logo
+            display: block
+            width: $small-logo
+            min-width: 100px
+            max-width: 150px
+            img
+                width: 100%
+                height: auto
+        .nav-links
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            .scroll-link
+                font-weight: 700
+                color: $text-color
+                margin: 0 20px
+                cursor: pointer
+                transition: color 0.25s ease-out
+                &:hover
+                    color: $accent-color
+
+        .nav-buttons
+            button
+                margin-left: 20px

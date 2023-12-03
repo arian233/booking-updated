@@ -1,0 +1,133 @@
+@import "../../styles/global"
+    
+h1
+    font-size: 5rem
+    margin-bottom: 48px
+    span
+        color: $accent-color
+    @media #{$xxlarge-up}
+        font-size: 6rem
+        margin-bottom: 48px
+    @media #{$large-only}
+        font-size: 4rem
+    @media #{$small-only}
+        font-size: 3rem
+
+#header
+    position: relative
+    z-index: 2
+    #header-title
+        width: 62.5%
+        @media #{$medium-down}
+            width: 100%
+            text-align: center
+    #header-image
+        position: relative
+        width: 37.5%
+        max-width: 500px
+        margin: 0 auto
+        img
+            position: absolute
+            top: 0
+            left: 0
+            width: 133%
+            height: auto
+        @media #{$medium-down}
+            width: 100%
+            img
+                position: relative
+                width: 100%
+
+#about
+    .curvey-container
+        margin-top: -50px
+    .about-description
+        min-width: 350px
+        width: 50%
+    .about-stats
+        margin-top: 100px
+        .about-stat-element
+            min-width: 200px
+            width: 23%
+        @media #{$medium-down}
+            margin-top: 75px
+        @media #{$small-only}
+            margin-top: 50px
+
+#how-it-works
+    position: relative
+    z-index: 2
+    margin-top: 128px
+    .columns .container
+        >h2
+            margin-top: 20px
+            margin-bottom: 48px
+    p
+        font-size: 1.5rem
+
+    .step
+        @media #{$medium-down}
+            margin-top: 72px
+        .step-image
+            position: relative
+            width: 35%
+            min-width: 300px
+            max-width: 500px
+            img
+                width: 100%
+                height: auto
+            &::before
+                content: ""
+                position: absolute
+                z-index: -1
+                width: 100%
+                height: 100%
+                right: -5%
+                bottom: -5%
+                border-radius: 7px
+                background-color: #1867F6
+            @media #{$small-only}
+                width: 100%
+                
+        &.step-2
+            .step-image
+                &::before
+                    background-color: #09113A
+        &.step-3
+            .step-image
+                &::before
+                    background-color: #AA2A84
+        .step-desc
+            width: 60%
+            h2
+                margin-bottom: 16px
+            @media #{$small-only}
+                margin-top: 12px
+                width: 100%
+
+footer
+    padding-bottom: 24px
+    .footer-header
+        margin-top: 24px
+        margin-bottom: 48px
+        .footer-logo
+            align-self: flex-start
+            margin-top: 36px
+        .footer-header-text
+            width: 50%
+            align-items: flex-start
+            h3
+                width: 100%
+            h2
+                margin-top: 20px
+            .footer-cta
+                align-self: flex-end
+                margin-top: 20px
+            @media #{$small-only}
+                width: 100%
+                margin-top: 24px
+
+    .footer-bottom
+        img
+            height: 1rem
+            width: auto

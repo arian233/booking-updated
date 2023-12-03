@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap')
+$roboto-font: "Roboto", arial, sans-serif
+
+// $dark-blue-bg-color: #040415
+$main-bg-color: #FFFFFF
+$secondary-bg-color: #EEEEEE
+$tertiary-bg-color: #09113A
+$text-color: #09113A
+$accent-color: #1867F6
+$secondary-accent-color: #14BC93
+$tertiary-accent-color: #18EEFF
+$alert-color: #DD1E1E
+$light-blue: #1E97DD
+
+
+
+// AUTH COLOURS
+$discord-color: #7289DA
+$twitch-color: #6441A4
+$twitter-color: #1DA1F2
+$instagram1-color: #5851db
+$instagram2-color: #fcaf45
+
+// SHADOW
+$shadow-2: -4px -4px 10px #3A3A3A,  4px 4px 10px #000000,  4px 4px 10px #000000, -4px -4px 10px #3A3A3A
+$shadow:  7px 7px 14px #121212, -7px -7px 14px #222222
+$text-shadow: 20px 20px 60px #171717, -20px -20px 60px #1d1d1d 
+
+
+// GRID
+$columns: 12
+$gutters: $columns - 1
+$column-width: 7.3%
+$gutter-width: 1.13%
+$columns-width: $gutters * $gutter-width + $columns * $column-width
+$checkpoint-width: 8 * $gutter-width + 9 * $column-width
+
+// small vars
+$small-min-columns-width: 310px
+$small-max-columns-width: 400px
+$small-displacement: 3 * $column-width + 2 * $gutter-width
+$small-logo: 1.5 * $column-width + 1 * $gutter-width
+
+// large vars
+$large-min-columns-width: 900px
+$large-max-columns-width: 1640px
+$large-logo: 1.25 * $column-width
+$large-checkpoint-width: 83%
+$large-displacement: 2 * $column-width + 1 * $gutter-width
+
+    
+
+$desktop-navbar-container-width: 1020px
+
+
+// Media and responsive vars
+$small-range: 768px
+$medium-range1: 769px
+$medium-range2: 992px
+$large-range1: 993px
+$large-range2: 1440px
+$xlarge-range1: 1441px
+$xlarge-range2: 1920px
+$xxlarge-range1: 1921px
+$xxlarge-range2: 9999px
+
+$screen: "only screen"
+
+// $landscape: "#{$screen} and (orientation: landscape)"
+// $portrait: "#{$screen} and (orientation: portrait)"
+
+$small-up: $screen
+$small-only: "#{$screen} and (max-width: #{$small-range})"
+$small-med-only: "#{$screen} and (max-width: 800px)"
+
+$medium-down: "#{$screen} and (max-width:#{$medium-range2})"
+$medium-up: "#{$screen} and (min-width:#{$medium-range1})"
+$medium-only: "#{$screen} and (min-width:#{$medium-range1}) and (max-width:#{$medium-range2})"
+
+$large-up: "#{$screen} and (min-width:#{$large-range1})"
+$large-down: "#{$screen} and (max-width:#{$large-range1})"
+$large-only: "#{$screen} and (min-width:#{$large-range1}) and (max-width:#{$large-range2})"
+
+$xlarge-up: "#{$screen} and (min-width:#{$xlarge-range1})"
+$xlarge-only: "#{$screen} and (min-width:#{$xlarge-range1}) and (max-width:#{$xlarge-range2})"
+
+$xxlarge-up: "#{$screen} and (min-width:#{$xxlarge-range1})"
+$xxlarge-only: "#{$screen} and (min-width:#{$xxlarge-range1}) and (max-width:#{$xxlarge-range2})"
